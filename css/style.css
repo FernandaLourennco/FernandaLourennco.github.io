@@ -1,4 +1,3 @@
-/* reset padrão e variáveis */
 * {
     margin: 0;
     padding: 0;
@@ -775,7 +774,6 @@ main {
         justify-content: flex-start;
     }
 }
-3
 
 @media (max-width: 900px) {
 
@@ -810,11 +808,6 @@ main {
     }
 }
 
-
-/* =========================
-   MOBILE
-   ========================= */
-
 @media (max-width: 600px) {
 
     .header {
@@ -847,8 +840,6 @@ main {
     }
 
 
-    /* EXPERIÊNCIAS */
-
     .experiencia-item {
         padding: 1.5rem 0;
     }
@@ -879,9 +870,6 @@ main {
     .experiencia-period {
         font-size: 0.9rem;
     }
-
-
-    /* FOOTER */
 
     .footer {
         width: 100%;
