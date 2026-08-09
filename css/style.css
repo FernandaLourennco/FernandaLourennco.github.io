@@ -670,6 +670,8 @@ main {
         min-height: 64px;
     }
 
+    
+
     .header.scrolled {
         padding: 1rem 5%;
     }
@@ -816,7 +818,19 @@ main {
 
         padding: 1rem 5%;
         min-height: 64px;
+
+
     }
+    
+
+    .hero-image-wrapper::before {
+        top: 10px;
+    }
+
+    .image-container {
+        top: -20px;
+    }
+
 
     .header.scrolled {
         padding: 1rem 5%;
