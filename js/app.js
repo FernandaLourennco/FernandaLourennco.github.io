@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Configuração do Intersection Observer para disparar animações
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -13,23 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
+    // Elementos com fade-up (subindo)
     const fadeUpElements = document.querySelectorAll('.fade-up');
     fadeUpElements.forEach(el => observer.observe(el));
 
+    // Elemento da imagem com fade-right (vindo do lado)
     const fadeRightElements = document.querySelectorAll('.fade-right');
     fadeRightElements.forEach(el => observer.observe(el));
 
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.header');
+    const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
     });
-
-});
 
 });
